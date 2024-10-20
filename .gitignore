@@ -50,3 +50,15 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+public/uploaded_pictures/
+
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
