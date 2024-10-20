@@ -33,7 +33,6 @@ class BlogArticle
     private ?string $title = null;
 
     #[ORM\Column(nullable: true)]
-    #[Assert\DateTime(message: 'Invalid datetime format for publication date')]
     #[Groups(['article.show'])]
     private ?\DateTimeImmutable $publicationDate = null;
 

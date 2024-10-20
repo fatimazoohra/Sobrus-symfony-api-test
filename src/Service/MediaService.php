@@ -20,4 +20,9 @@ class MediaService {
         return $fileName;                
     }
 
+    public function deleteMedia($file_name) {
+        $file_url =$this->uploadedPicsDir ."/".$file_name;
+        unlink( $file_url );
+    }
+
 }
